@@ -1,0 +1,17 @@
+The CSS property `calc()` is used to perform calculations. However, if you are using `calc()` with percentages and other units, be sure that the units are consistent and compatible in your calculations. For example, the following code will result in an error, because it is trying to add a percentage to a pixel value directly:
+```css
+width: calc(50% + 10px);
+```
+This is because the browser cannot directly add a percentage to a pixel value. The percentage must first be converted into a pixel value before it can be added to the pixel value. To fix this, you would need to rewrite the calculation as:
+```css
+width: calc(50% + 10vw); 
+```
+Here, the calculation is adding a percentage to a viewport width value, which is consistent.
+Another error could be in the use of nested calculations: 
+```css
+width: calc(calc(50% - 10px) + 20px);
+```
+This can be simplified by removing the inner `calc()` function to improve performance:
+```css
+width: calc(50% + 10px);
+```
