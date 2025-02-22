@@ -1,0 +1,9 @@
+The corrected CSS code is as follows:
+```css
+/*Solution for inconsistent units*/
+width: calc(50% + 10vw);
+
+/*Solution for nested calculations*/
+width: calc(50% + 10px);
+```
+The improved version addresses the unit consistency issue in `calc()` by using compatible units (`vw` or `%`) and simplifies nested `calc()` expressions. This increases performance and readability of the code.
