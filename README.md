@@ -1,0 +1,3 @@
+# Uncommon CSS `calc()` Errors and Solutions
+This repository demonstrates some uncommon errors that can occur when using the CSS `calc()` function and provides solutions for them.
+The `bug.css` file contains code demonstrating the error of mixing percentages and pixel values in `calc()`, and an example of overly nested `calc()` expressions. The `bugSolution.css` file shows the corrected code with improved clarity and efficiency.  This is a common issue where developers may forget that `calc()` needs consistent unit types in its operations. The nested `calc()` problem demonstrates how unnecessary complexity can negatively impact performance and readability.
